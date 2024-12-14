@@ -1,0 +1,112 @@
+body{
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinha os botões no centro vertical */
+  align-items: center; /* Alinha os botões no centro horizontal */
+  position: absolute; /* Para posicionar em relação à página */
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%); /* Alinha ao centro vertical da página */
+}
+.image-link {
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+.image-button {
+  background: none;
+  border: none;
+  padding: 10px;
+}
+.image-button img {
+  width: 60px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 60px;
+  border-radius: 256px;
+  cursor: pointer;
+}
+
+.buybutton {
+  background-color: #00b8d4 !important; /* Cor de fundo azul vibrante */
+  color: white; /* Cor do texto */
+  border: none !important; /* Remove qualquer borda */
+  padding: 15px 30px; /* Espaçamento interno */
+  font-size: 18px; /* Tamanho da fonte maior */
+  font-weight: bold; /* Deixa o texto em negrito */
+  text-align: center; /* Centraliza o texto */
+  text-transform: uppercase; /* Transforma o texto para caixa alta */
+  display: inline-flex; /* Faz com que o texto e a seta fiquem na mesma linha */
+  align-items: center; /* Alinha verticalmente o texto e a seta */
+  justify-content: center; /* Garante que o conteúdo está bem distribuído */
+  border-radius: 0 !important; /* Força bordas retas (sem arredondamento) */
+  cursor: pointer; /* Altera o cursor para uma mãozinha */
+  transition: background-color 0.3s ease; /* Transição suave na cor do fundo */
+  box-shadow: none !important; /* Remove qualquer sombra */
+  width: auto; /* Tamanho automático, ajustando ao conteúdo */
+  height: 20px; /* Altura fixa */
+  text-decoration: none;  /* Remove o sublinhado */
+
+  position: fixed; /* Posiciona o botão de forma fixa */
+  bottom: 130px; /* 20px de distância da parte inferior */
+  left: 100px; /* 20px de distância da parte esquerda */
+  z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+}
+.arrow {
+  margin-left: 10px; /* Espaçamento entre o texto e a seta */
+  font-size: 20px; /* Tamanho da seta */
+}
+.buybutton:hover {
+  background-color: #008c99; /* Cor de fundo mais escura no hover */
+}
+.discount {
+  font-family: monospace;
+  font-size: 30px; /* Tamanho da fonte */
+  color: #ffffff; /* Cor azul */
+  text-transform: uppercase; /* Transforma o texto para caixa alta */ 
+  position: fixed; /* Posiciona o botão de forma fixa */
+  bottom: 137px; /* 20px de distância da parte inferior */
+  left: 340px; /* 20px de distância da parte esquerda */
+}
+
+.title {
+  font-size: 60px;
+  color: white;
+  font-family: arial;
+  display: flex;
+  justify-content: left; /* Centraliza o bloco */
+  align-items: center;     /* Alinha verticalmente, se necessário */
+  position: absolute; /* Para posicionar em relação à página */
+  top: 50%;
+  left: 100px;
+  transform: translateY(-50%); /* Alinha ao centro vertical da página */
+}
+
+.navbar {
+  position: absolute;  /* Posiciona o elemento no topo da página */
+  top: 100px;              /* Alinha ao topo */
+  left: 40px;             /* Alinha à esquerda */
+  width: 50%;         /* A navbar ocupa toda a largura da página */
+  z-index: 1000;       /* Garantir que a navbar fique por cima de outros elementos */
+}
+.navbar ul {
+  display: flex;       /* Organiza os itens da lista horizontalmente */
+  list-style-type: none;
+  justify-content: flex-start;
+}
+.navbar li {
+  margin-right: 20px;  /* Espaçamento entre os itens */
+}
+.navbar a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: white;        /* Cor do texto */
+  text-decoration: none;  /* Remove o sublinhado */
+  padding: 15px 20px;   /* Espaçamento dentro dos itens */
+  display: block;       /* Faz com que o link ocupe toda a área do item */
+}
+.navbar a:hover {
+  background-color: #575757;  /* Altera a cor do fundo quando o mouse passa sobre o link */
+  border-radius: 20px;
+}
